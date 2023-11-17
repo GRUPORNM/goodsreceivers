@@ -1,0 +1,95 @@
+<mvc:View controllerName="goodsreceiversmanagement.controller.GoodsReceiver"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns:ux="sap.uxap"
+    xmlns="sap.m"
+    xmlns:f="sap.f"
+    xmlns:form="sap.ui.layout.form"
+    xmlns:core="sap.ui.core">
+
+    <Page id="requestDetailPage" title="{kunwe_desc}" floatingFooter="true" showNavButton="true" navButtonPress="onNavBack">
+        <content>
+            <Panel id="_IDGenPanel1">
+                <form:SimpleForm editable="false" layout="ColumnLayout" title="{i18n>generalInfo}" columnsM="2" columnsL="3" columnsXL="4" class="sapUiTinyMarginTop">
+                    <form:content>
+                        <Label text="{i18n>name}"/>
+                        <Text id="name" text="{kunwe_desc}" />
+                        <Label text="{i18n>vat_no}"/>
+                        <Text id="vat" text="{kunwe_vatno}" />
+                    </form:content>
+                </form:SimpleForm>
+                <form:SimpleForm editable="false" layout="ColumnLayout" title="{i18n>addressInfo}" columnsM="2" columnsL="3" columnsXL="4">
+                    <form:content>
+                        <Label text="{i18n>country}"/>
+                        <Text id="country" text="{kunwe_country_desc}" />
+                        <Label text="{i18n>region}"/>
+                        <Text id="region" text="{kunwe_region}" />
+                        <Label text="{i18n>city}"/>
+                        <Text id="city" text="{kunwe_city}" />
+                        <Label text="{i18n>street}"/>
+                        <Text id="street" text="{kunwe_street}" />
+                        <Label text="{i18n>postalCode}"/>
+                        <Text id="postalCode" text="{kunwe_postalcode}" />
+                    </form:content>
+                </form:SimpleForm>
+                <!-- <ux:ObjectPageLayout id="ObjectPageLayout" showTitleInHeaderContent="true" alwaysShowContentHeader="false" preserveHeaderStateOnScroll="false" headerContentPinnable="false" isChildPage="true" upperCaseAnchorBar="false" showAnchorBar="false" toggleHeaderOnTitleClick="false">
+            <ux:headerTitle>
+                <ux:ObjectPageDynamicHeaderTitle>
+                    <ux:snappedHeading>
+                        <FlexBox wrap="Wrap" fitContainer="true" alignItems="Center" justifyContent="SpaceBetween">
+                            <Title id="detailTitle2" text="{kunwe_desc}" wrapping="true" class="sapUiSmallMarginEnd"/>
+                        </FlexBox>
+                    </ux:snappedHeading>
+                </ux:ObjectPageDynamicHeaderTitle>
+            </ux:headerTitle>
+            <ux:headerContent>
+                <FlexBox wrap="Wrap" fitContainer="true" alignItems="Center" justifyContent="SpaceBetween">
+                    <Text id="detailTitleText" text="{kunwe_desc}" class="sapuiHeaderLabel-s20"/>
+                </FlexBox>
+            </ux:headerContent>
+            <ux:sections>
+                <ux:ObjectPageSection>
+                    <ux:subSections>
+                        <ux:ObjectPageSubSection>
+                            <ux:blocks>
+                                <form:SimpleForm editable="false" layout="ColumnLayout" title="{i18n>generalInfo}" columnsM="2" columnsL="3" columnsXL="4">
+                                    <form:content>
+                                        <Label text="{i18n>name}"/>
+                                        <Text id="name" text="{kunwe_desc}" />
+                                        <Label text="{i18n>vat_no}"/>
+                                        <Text id="vat" text="{kunwe_vatno}" />
+                                    </form:content>
+                                </form:SimpleForm>
+                            </ux:blocks>
+                        </ux:ObjectPageSubSection>
+                    </ux:subSections>
+                </ux:ObjectPageSection>
+
+                <ux:ObjectPageSection>
+                    <ux:subSections>
+                        <ux:ObjectPageSubSection>
+                            <ux:blocks>
+                                <form:SimpleForm editable="false" layout="ColumnLayout" title="{i18n>addressInfo}" columnsM="2" columnsL="3" columnsXL="4">
+                                    <form:content>
+                                        <Label text="{i18n>country}"/>
+                                        <Text id="country" text="{kunwe_country_desc}" />
+                                        <Label text="{i18n>region}"/>
+                                        <Text id="region" text="{kunwe_region}" />
+                                        <Label text="{i18n>city}"/>
+                                        <Text id="city" text="{kunwe_city}" />
+                                        <Label text="{i18n>street}"/>
+                                        <Text id="street" text="{kunwe_street}" />
+                                        <Label text="{i18n>postalCode}"/>
+                                        <Text id="postalCode" text="{kunwe_postalcode}" />
+                                    </form:content>
+                                </form:SimpleForm>
+                            </ux:blocks>
+                        </ux:ObjectPageSubSection>
+                    </ux:subSections>
+                </ux:ObjectPageSection> -->
+                <!-- </ux:sections>
+        </ux:ObjectPageLayout> -->
+            </Panel>
+        </content>
+    </Page>
+
+</mvc:View>
